@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjay Manimtim | Business Analyst &amp; Automation Portfolio</title><!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script><!-- Google Fonts - DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet"><!-- Lucide Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"DM Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#151D30',
+                            teal: '#14B8A6',
+                            blue: '#3B82F6',
+                            accent: '#2DD4BF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+  <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: #0B0F19;
+            color: #F3F4F6;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0F19;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1E293B;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #14B8A6;
+        }
+    </style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+ </head>
+ <body data-template-id="__page-root" class="min-h-screen selection:bg-teal-500 selection:text-white flex flex-col justify-between overflow-x-hidden"><!-- NAVIGATION HEADER -->
+  <header data-template-id="nav-header" class="canva-header sticky top-0 z-50 backdrop-blur-md bg-brand-dark/85 border-b border-gray-800/80 transition-all duration-300">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+     <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-brand-teal to-brand-blue flex items-center justify-center font-bold text-white text-lg shadow-lg shadow-brand-teal/20">
+      AM
+     </div>
+     <div>
+      <h1 data-template-id="brand-name" class="canva-text text-xl font-bold tracking-tight bg-gradient-to-r from-white via-gray-200 to-brand-teal bg-clip-text text-transparent"></h1>
+      <p data-template-id="brand-title" class="canva-text text-xs text-gray-400 tracking-wider uppercase"></p>
+     </div>
+    </div>
+    <nav class="hidden md:flex items-center space-x-8"><a href="#about" data-template-id="nav-about" class="canva-link text-sm font-medium text-gray-300 hover:text-brand-teal transition-colors"></a> <a href="#experience" data-template-id="nav-exp" class="canva-link text-sm font-medium text-gray-300 hover:text-brand-teal transition-colors"></a> <a href="#calculator" data-template-id="nav-calc" class="canva-link text-sm font-medium text-gray-300 hover:text-brand-teal transition-colors flex items-center gap-1.5"> <i data-lucide="calculator" class="w-4 h-4 text-brand-teal"></i> </a> <a href="#skills" data-template-id="nav-skills" class="canva-link text-sm font-medium text-gray-300 hover:text-brand-teal transition-colors"></a> <a href="#education" data-template-id="nav-edu" class="canva-link text-sm font-medium text-gray-300 hover:text-brand-teal transition-colors"></a>
+    </nav>
+    <div class="flex items-center space-x-4"><a href="#contact" data-template-id="nav-cta" class="canva-button inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white rounded-lg hover:shadow-lg transition-all duration-300"></a>
+    </div>
+   </div>
+  </header>
+  <main class="w-full flex-grow"><!-- HERO SECTION -->
+   <section id="hero" class="canva-section relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden border-b border-gray-900"><!-- Background glow effect -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(20,184,166,0.08),transparent_50%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(59,130,246,0.08),transparent_50%)]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"><!-- Hero Left Content -->
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+       <div class="inline-flex items-center space-x-2 bg-brand-teal/10 border border-brand-teal/30 px-3.5 py-1.5 rounded-full text-brand-teal text-sm font-medium tracking-wide"><i data-lucide="zap" class="w-4 h-4 animate-pulse"></i> <span data-template-id="hero-badge"></span>
+       </div>
+       <h2 data-template-id="hero-headline" class="canva-text text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white"></h2>
+       <p data-template-id="hero-subheadline" class="canva-text text-lg sm:text-xl text-gray-400 font-medium"></p>
+       <p data-template-id="hero-desc" class="canva-text text-base sm:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed"></p>
+       <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4"><a href="#experience" data-template-id="hero-btn-primary" class="canva-button w-full sm:w-auto px-8 py-4 text-base font-bold text-white rounded-xl shadow-lg hover:shadow-brand-teal/20 transition-all duration-300 text-center"></a> <a href="#calculator" data-template-id="hero-btn-secondary" class="canva-button w-full sm:w-auto px-8 py-4 text-base font-bold text-gray-300 rounded-xl border border-gray-700 hover:bg-white/5 transition-all duration-300 text-center flex items-center justify-center gap-2"> <i data-lucide="calculator" class="w-5 h-5"></i> </a>
+       </div>
+      </div><!-- Hero Right Visual Framework -->
+      <div class="lg:col-span-5 relative">
+       <div class="relative w-full max-w-md mx-auto aspect-square lg:max-w-none">
+        <div class="absolute inset-0 bg-gradient-to-tr from-brand-teal to-brand-blue rounded-3xl opacity-20 blur-2xl"></div>
+        <div class="relative bg-brand-card border border-gray-800 rounded-3xl p-4 shadow-2xl overflow-hidden group"><img data-template-id="hero-image" class="canva-image w-full h-full object-cover rounded-2xl filter brightness-90 contrast-105 group-hover:scale-102 transition-transform duration-500" loading="lazy">
+         <div class="absolute bottom-6 left-6 right-6 bg-brand-dark/90 backdrop-blur-md border border-gray-800 p-4 rounded-xl shadow-xl">
+          <div class="flex items-center space-x-3">
+           <div class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></div><span data-template-id="hero-status" class="canva-text text-sm font-medium text-gray-300"></span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- ABOUT & QUICK METRICS SECTION -->
+   <section id="about" class="canva-section py-20 bg-brand-dark/40 border-b border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"><!-- Left: About Image and Bio -->
+      <div class="lg:col-span-5 space-y-6">
+       <div class="relative max-w-sm mx-auto rounded-2xl overflow-hidden border border-gray-800 shadow-xl"><img data-template-id="about-image" class="canva-image w-full h-[400px] object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+       </div>
+      </div><!-- Right: About description & Key Highlights -->
+      <div class="lg:col-span-7 space-y-8">
+       <div><span data-template-id="about-tag" class="canva-text text-xs uppercase font-extrabold tracking-widest text-brand-teal"></span>
+        <h3 data-template-id="about-title" class="canva-text text-3xl font-extrabold text-white mt-1"></h3>
+        <p data-template-id="about-desc" class="canva-text text-gray-400 mt-4 leading-relaxed"></p>
+       </div><!-- Highlights Grid -->
+       <div class="grid grid-cols-2 gap-6">
+        <div data-template-id="highlight-card-1" class="canva-card p-5 bg-brand-card/60 border border-gray-800/80 rounded-2xl hover:border-brand-teal/40 transition-colors duration-300">
+         <div class="flex items-center space-x-3 text-brand-teal mb-2"><i data-lucide="clock" class="w-5 h-5"></i> <span data-template-id="highlight-label-1" class="canva-text text-xs uppercase tracking-wider font-bold text-gray-400"></span>
+         </div>
+         <h4 data-template-id="highlight-val-1" class="canva-text text-3xl font-extrabold text-white"></h4>
+        </div>
+        <div data-template-id="highlight-card-2" class="canva-card p-5 bg-brand-card/60 border border-gray-800/80 rounded-2xl hover:border-brand-teal/40 transition-colors duration-300">
+         <div class="flex items-center space-x-3 text-brand-blue mb-2"><i data-lucide="trending-up" class="w-5 h-5"></i> <span data-template-id="highlight-label-2" class="canva-text text-xs uppercase tracking-wider font-bold text-gray-400"></span>
+         </div>
+         <h4 data-template-id="highlight-val-2" class="canva-text text-3xl font-extrabold text-white"></h4>
+        </div>
+        <div data-template-id="highlight-card-3" class="canva-card p-5 bg-brand-card/60 border border-gray-800/80 rounded-2xl hover:border-brand-teal/40 transition-colors duration-300">
+         <div class="flex items-center space-x-3 text-brand-teal mb-2"><i data-lucide="layers" class="w-5 h-5"></i> <span data-template-id="highlight-label-3" class="canva-text text-xs uppercase tracking-wider font-bold text-gray-400"></span>
+         </div>
+         <h4 data-template-id="highlight-val-3" class="canva-text text-3xl font-extrabold text-white"></h4>
+        </div>
+        <div data-template-id="highlight-card-4" class="canva-card p-5 bg-brand-card/60 border border-gray-800/80 rounded-2xl hover:border-brand-teal/40 transition-colors duration-300">
+         <div class="flex items-center space-x-3 text-brand-blue mb-2"><i data-lucide="users" class="w-5 h-5"></i> <span data-template-id="highlight-label-4" class="canva-text text-xs uppercase tracking-wider font-bold text-gray-400"></span>
+         </div>
+         <h4 data-template-id="highlight-val-4" class="canva-text text-3xl font-extrabold text-white"></h4>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- INTERACTIVE PROCESS SAVINGS & FTE CALCULATOR -->
+   <section id="calculator" class="canva-section py-20 bg-gradient-to-b from-brand-dark to-brand-card/40 border-b border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center max-w-3xl mx-auto mb-16 space-y-4"><span data-template-id="calc-tag" class="canva-text text-xs uppercase font-extrabold tracking-widest text-brand-teal"></span>
+      <h3 data-template-id="calc-title" class="canva-text text-3xl sm:text-4xl font-extrabold text-white"></h3>
+      <p data-template-id="calc-desc" class="canva-text text-gray-400"></p>
+     </div>
+     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch"><!-- Left: Control Panels & Preset Loaders -->
+      <div class="lg:col-span-7 bg-brand-card/60 border border-gray-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-6">
+       <div>
+        <h4 data-template-id="calc-panel-title" class="canva-text text-lg font-bold text-white mb-2"></h4>
+        <p data-template-id="calc-panel-desc" class="canva-text text-xs text-gray-400 mb-6"></p><!-- Presets Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8"><button type="button" onclick="loadCalcPreset(180, 1000, 25, 'Retail API Auto')" class="calc-preset-btn flex flex-col justify-between items-start p-3.5 rounded-xl border border-gray-800 bg-brand-dark/50 hover:border-brand-teal text-left transition-all duration-300"> <span class="text-[11px] font-bold text-brand-teal uppercase tracking-wider">Trading API</span> <span class="text-sm font-bold text-white mt-1">Retail API Integration</span> </button> <button type="button" onclick="loadCalcPreset(15, 2000, 20, 'Onboarding Mail')" class="calc-preset-btn flex flex-col justify-between items-start p-3.5 rounded-xl border border-gray-800 bg-brand-dark/50 hover:border-brand-teal text-left transition-all duration-300"> <span class="text-[11px] font-bold text-brand-teal uppercase tracking-wider">HR Workflow</span> <span class="text-sm font-bold text-white mt-1">Onboarding Mail</span> </button> <button type="button" onclick="loadCalcPreset(45, 1200, 22, 'Custom Service')" class="calc-preset-btn flex flex-col justify-between items-start p-3.5 rounded-xl border border-gray-800 bg-brand-dark/50 hover:border-brand-teal text-left transition-all duration-300"> <span class="text-[11px] font-bold text-brand-teal uppercase tracking-wider">Interactive Agent</span> <span class="text-sm font-bold text-white mt-1">Guest Messaging AI</span> </button>
+        </div><!-- Real-time sliders -->
+        <form id="calc-form" onsubmit="event.preventDefault();" class="space-y-6">
+         <div>
+          <div class="flex justify-between items-center mb-2"><label for="manual-time" data-template-id="calc-lbl-manual" class="canva-text text-sm font-medium text-gray-300"></label> <span class="text-sm font-bold text-brand-teal" id="manual-time-val">45 mins</span>
+          </div><input type="range" id="manual-time" min="5" max="300" step="5" value="45" oninput="updateCalculation()" class="w-full accent-brand-teal h-2 bg-brand-dark rounded-lg cursor-pointer">
+         </div>
+         <div>
+          <div class="flex justify-between items-center mb-2"><label for="monthly-volume" data-template-id="calc-lbl-vol" class="canva-text text-sm font-medium text-gray-300"></label> <span class="text-sm font-bold text-brand-teal" id="monthly-volume-val">1,200</span>
+          </div><input type="range" id="monthly-volume" min="100" max="10000" step="100" value="1200" oninput="updateCalculation()" class="w-full accent-brand-teal h-2 bg-brand-dark rounded-lg cursor-pointer">
+         </div>
+         <div>
+          <div class="flex justify-between items-center mb-2"><label for="hourly-rate" data-template-id="calc-lbl-rate" class="canva-text text-sm font-medium text-gray-300"></label> <span class="text-sm font-bold text-brand-teal" id="hourly-rate-val">$22/hr</span>
+          </div><input type="range" id="hourly-rate" min="10" max="100" step="1" value="22" oninput="updateCalculation()" class="w-full accent-brand-teal h-2 bg-brand-dark rounded-lg cursor-pointer">
+         </div>
+        </form>
+       </div>
+      </div><!-- Right: ROI Metrics Display -->
+      <div class="lg:col-span-5 bg-gradient-to-br from-brand-card to-brand-dark border border-gray-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden">
+       <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-teal/5 rounded-full blur-3xl pointer-events-none"></div>
+       <div><span class="text-[11px] font-bold text-brand-teal uppercase tracking-widest">Automation ROI Dashboard</span>
+        <h4 id="calc-project-title" class="text-xl font-extrabold text-white mt-1 mb-8">Custom Service Simulation</h4>
+        <div class="space-y-6"><!-- Metric 1 -->
+         <div class="border-b border-gray-800 pb-4">
+          <p data-template-id="calc-out-lbl-1" class="canva-text text-xs text-gray-400 font-medium"></p>
+          <div class="flex items-baseline space-x-2 mt-1"><span id="saved-hours" class="text-3xl font-extrabold text-brand-teal">540 hrs</span> <span class="text-xs text-gray-500">/ month</span>
+          </div>
+         </div><!-- Metric 2 -->
+         <div class="border-b border-gray-800 pb-4">
+          <p data-template-id="calc-out-lbl-2" class="canva-text text-xs text-gray-400 font-medium"></p>
+          <div class="flex items-baseline space-x-2 mt-1"><span id="fte-saved" class="text-3xl font-extrabold text-brand-blue">3.4 FTEs</span> <span class="text-xs text-gray-500">optimized</span>
+          </div>
+         </div><!-- Metric 3 -->
+         <div>
+          <p data-template-id="calc-out-lbl-3" class="canva-text text-xs text-gray-400 font-medium"></p>
+          <div class="flex items-baseline space-x-2 mt-1"><span id="cost-avoided" class="text-4xl font-black text-emerald-400">$11,880</span> <span class="text-xs text-gray-500">/ month</span>
+          </div>
+          <p class="text-[11px] text-gray-500 mt-2">Annual Savings projection: <strong id="annual-saving-val" class="text-white">$142,560</strong></p>
+         </div>
+        </div>
+       </div>
+       <div class="mt-8 pt-6 border-t border-gray-800">
+        <p data-template-id="calc-note" class="canva-text text-xs text-gray-400 italic leading-relaxed"></p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- EXPERIENCE SECTION -->
+   <section id="experience" class="canva-section py-20 bg-brand-dark/40 border-b border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center max-w-3xl mx-auto mb-16 space-y-4"><span data-template-id="exp-tag" class="canva-text text-xs uppercase font-extrabold tracking-widest text-brand-teal"></span>
+      <h3 data-template-id="exp-title" class="canva-text text-3xl sm:text-4xl font-extrabold text-white"></h3>
+      <p data-template-id="exp-desc" class="canva-text text-gray-400"></p>
+     </div><!-- Custom Switcher Tabs -->
+     <div class="flex justify-center space-x-4 mb-12"><button type="button" id="tab-quess-btn" onclick="switchExperienceTab('quess')" class="px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center gap-2 bg-brand-teal text-white shadow-lg shadow-brand-teal/20"> <i data-lucide="building-2" class="w-5 h-5"></i> <span>Quess (7 Years)</span> </button> <button type="button" id="tab-evoke-btn" onclick="switchExperienceTab('evoke')" class="px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center gap-2 border border-gray-800 text-gray-400 hover:text-white"> <i data-lucide="cpu" class="w-5 h-5"></i> <span>Evoke (1 Year)</span> </button>
+     </div><!-- QUESS PROJECTS SECTION -->
+     <div id="tab-quess" class="space-y-6 transition-all duration-500"><!-- Quess Project 1 -->
+      <div data-template-id="quess-p1-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 1 • Cloud Integration</span>
+         <h4 data-template-id="quess-p1-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="quess-p1-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="quess-p1-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="quess-p1-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Draw.io</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">MS Excel</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">MS Word</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Teams</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Quess Project 2 -->
+      <div data-template-id="quess-p2-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 2 • Self Service Enhancement</span>
+         <h4 data-template-id="quess-p2-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="quess-p2-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="quess-p2-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="quess-p2-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Draw.io</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">MS Excel</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">MS Forms</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Quess Project 3 -->
+      <div data-template-id="quess-p3-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 3 • System Upgrade</span>
+         <h4 data-template-id="quess-p3-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="quess-p3-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="quess-p3-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="quess-p3-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Draw.io</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">MS Teams</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">QR Protocols</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Quess Project 4 -->
+      <div data-template-id="quess-p4-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 4 • Chat &amp; AI Integration</span>
+         <h4 data-template-id="quess-p4-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="quess-p4-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="quess-p4-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="quess-p4-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">AI Agent Integrations</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">MS Forms</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Draw.io</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Quess Project 5 -->
+      <div data-template-id="quess-p5-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 5 • Sports Club Booking</span>
+         <h4 data-template-id="quess-p5-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="quess-p5-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="quess-p5-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="quess-p5-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Draw.io</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">MS Teams</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Payment APIs</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div><!-- EVOKE PROJECTS SECTION -->
+     <div id="tab-evoke" class="space-y-6 hidden transition-all duration-500"><!-- Evoke Project 1 -->
+      <div data-template-id="evoke-p1-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 1 • Trading Retail API Automation</span>
+         <h4 data-template-id="evoke-p1-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="evoke-p1-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="evoke-p1-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="evoke-p1-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">UiPath</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Skore/Spark</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Jira</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Confluence</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Evoke Project 2 -->
+      <div data-template-id="evoke-p2-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 2 • New Joiner Onboarding Automation</span>
+         <h4 data-template-id="evoke-p2-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="evoke-p2-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="evoke-p2-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="evoke-p2-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">UiPath</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Excel</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Google Drive</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Outlook</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Evoke Project 3 -->
+      <div data-template-id="evoke-p3-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 3 • Dispute Tagging automation</span>
+         <h4 data-template-id="evoke-p3-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="evoke-p3-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="evoke-p3-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="evoke-p3-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">UiPath</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">SharePoint</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Outlook</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Evoke Project 4 -->
+      <div data-template-id="evoke-p4-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 4 • 3rd Party Data Pipeline to Snowflake</span>
+         <h4 data-template-id="evoke-p4-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="evoke-p4-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="evoke-p4-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="evoke-p4-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">UiPath</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Snowflake</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Process Mapping</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Evoke Project 5 -->
+      <div data-template-id="evoke-p5-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 5 • Removal of Thresholds</span>
+         <h4 data-template-id="evoke-p5-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="evoke-p5-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="evoke-p5-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="evoke-p5-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">UiPath</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Back-office Suite</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Evoke Project 6 -->
+      <div data-template-id="evoke-p6-card" class="canva-card bg-brand-card/50 border border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-brand-teal/40 transition-all duration-300">
+       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-800/80 pb-4 mb-4">
+        <div><span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Project 6 • ID Verification Automation</span>
+         <h4 data-template-id="evoke-p6-title" class="canva-text text-xl font-extrabold text-white mt-1"></h4>
+        </div><span data-template-id="evoke-p6-impact-badge" class="canva-tag px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full"></span>
+       </div>
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-4">
+         <p data-template-id="evoke-p6-desc" class="canva-text text-sm text-gray-400 leading-relaxed"></p>
+         <div class="bg-brand-dark/40 border border-gray-800 p-4 rounded-xl space-y-1"><span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider block">Key Business Analyst Responsibility</span>
+          <p data-template-id="evoke-p6-resp" class="canva-text text-sm text-gray-300"></p>
+         </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col justify-between space-y-4">
+         <div><span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tools Used</span>
+          <div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Skore/Spart</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">UiPath</span> <span class="px-2.5 py-1 bg-brand-dark text-xs text-gray-300 rounded border border-gray-800">Outlook</span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- TECHNICAL SKILLS MATRIX -->
+   <section id="skills" class="canva-section py-20 bg-brand-dark/20 border-b border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center max-w-3xl mx-auto mb-16 space-y-4"><span data-template-id="skills-tag" class="canva-text text-xs uppercase font-extrabold tracking-widest text-brand-teal"></span>
+      <h3 data-template-id="skills-title" class="canva-text text-3xl sm:text-4xl font-extrabold text-white"></h3>
+      <p data-template-id="skills-desc" class="canva-text text-gray-400"></p>
+     </div><!-- Skill filters -->
+     <div class="flex flex-wrap justify-center gap-2 mb-10"><button type="button" onclick="filterSkills('all')" id="filter-all" class="px-4 py-2 text-xs font-bold rounded-full bg-brand-teal text-white shadow-md shadow-brand-teal/10 transition-all duration-300">All Stack</button> <button type="button" onclick="filterSkills('rpa')" id="filter-rpa" class="px-4 py-2 text-xs font-bold rounded-full border border-gray-800 text-gray-400 hover:text-white transition-all duration-300">RPA &amp; Automation</button> <button type="button" onclick="filterSkills('pm')" id="filter-pm" class="px-4 py-2 text-xs font-bold rounded-full border border-gray-800 text-gray-400 hover:text-white transition-all duration-300">Project Management</button> <button type="button" onclick="filterSkills('data')" id="filter-data" class="px-4 py-2 text-xs font-bold rounded-full border border-gray-800 text-gray-400 hover:text-white transition-all duration-300">Data &amp; BI</button>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6"><!-- RPA Category -->
+      <div id="skill-group-rpa" class="skill-category-card bg-brand-card/50 border border-gray-800/80 rounded-2xl p-6 transition-all duration-300">
+       <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-brand-teal/10 flex items-center justify-center text-brand-teal border border-brand-teal/20"><i data-lucide="cpu" class="w-5 h-5"></i>
+        </div>
+        <h4 data-template-id="skills-cat1-title" class="canva-text text-lg font-bold text-white"></h4>
+       </div>
+       <ul class="space-y-3.5">
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">Basic UiPath flow</span> <span class="text-xs text-brand-teal font-semibold">Intermediate</span></li>
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">AS-IS &amp; TO-BE process mapping</span> <span class="text-xs text-brand-teal font-semibold">Expert</span></li>
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">Functional requirements gathering</span> <span class="text-xs text-brand-teal font-semibold">Expert</span></li>
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">Process Optimization</span> <span class="text-xs text-brand-teal font-semibold">Expert</span></li>
+       </ul>
+      </div><!-- Project Management Category -->
+      <div id="skill-group-pm" class="skill-category-card bg-brand-card/50 border border-gray-800/80 rounded-2xl p-6 transition-all duration-300">
+       <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue border border-brand-blue/20"><i data-lucide="folders" class="w-5 h-5"></i>
+        </div>
+        <h4 data-template-id="skills-cat2-title" class="canva-text text-lg font-bold text-white"></h4>
+       </div>
+       <ul class="space-y-3.5">
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">Jira &amp; Confluence workflows</span> <span class="text-xs text-brand-blue font-semibold">Expert</span></li>
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">FTE Savings Calculation</span> <span class="text-xs text-brand-blue font-semibold">Expert</span></li>
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">Stakeholder Management</span> <span class="text-xs text-brand-blue font-semibold">Advanced</span></li>
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">UAT Scenario Preparation</span> <span class="text-xs text-brand-blue font-semibold">Expert</span></li>
+       </ul>
+      </div><!-- Data & Integration Category -->
+      <div id="skill-group-data" class="skill-category-card bg-brand-card/50 border border-gray-800/80 rounded-2xl p-6 transition-all duration-300">
+       <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 border border-purple-500/20"><i data-lucide="database" class="w-5 h-5"></i>
+        </div>
+        <h4 data-template-id="skills-cat3-title" class="canva-text text-lg font-bold text-white"></h4>
+       </div>
+       <ul class="space-y-3.5">
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">M365 Suite (Excel Macros/VBA)</span> <span class="text-xs text-purple-400 font-semibold">Expert</span></li>
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">Snowflake (Querying)</span> <span class="text-xs text-purple-400 font-semibold">Advanced</span></li>
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">API &amp; Web App Integrations</span> <span class="text-xs text-purple-400 font-semibold">Advanced</span></li>
+        <li class="flex items-center justify-between"><span class="text-sm text-gray-300">Power BI Dashboards</span> <span class="text-xs text-purple-400 font-semibold">Advanced</span></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </section><!-- EDUCATION & EXTRA-CURRICULAR HUB -->
+   <section id="education" class="canva-section py-20 bg-gradient-to-b from-brand-dark via-brand-card/30 to-brand-dark border-b border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center max-w-3xl mx-auto mb-16 space-y-4"><span data-template-id="edu-tag" class="canva-text text-xs uppercase font-extrabold tracking-widest text-brand-teal"></span>
+      <h3 data-template-id="edu-title" class="canva-text text-3xl sm:text-4xl font-extrabold text-white"></h3>
+      <p data-template-id="edu-desc" class="canva-text text-gray-400"></p>
+     </div>
+     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"><!-- Left: Educational Background -->
+      <div class="lg:col-span-7 space-y-6"><!-- Education item 1 -->
+       <div data-template-id="edu-card-1" class="canva-card bg-brand-card/40 border border-gray-800/80 rounded-2xl p-6 hover:border-brand-teal/30 transition-all duration-300 flex items-start space-x-4">
+        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 border border-brand-teal/20 flex-shrink-0 flex items-center justify-center text-brand-teal"><i data-lucide="graduation-cap" class="w-6 h-6"></i>
+        </div>
+        <div class="space-y-1"><span class="text-xs font-bold text-brand-teal uppercase tracking-wider block">June 2014 - April 2015</span>
+         <h4 data-template-id="edu-h1" class="canva-text text-lg font-extrabold text-white"></h4>
+         <p data-template-id="edu-sub1" class="canva-text text-sm text-gray-400"></p>
+        </div>
+       </div><!-- Education item 2 -->
+       <div data-template-id="edu-card-2" class="canva-card bg-brand-card/40 border border-gray-800/80 rounded-2xl p-6 hover:border-brand-teal/30 transition-all duration-300 flex items-start space-x-4">
+        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 border border-brand-teal/20 flex-shrink-0 flex items-center justify-center text-brand-teal"><i data-lucide="book-open" class="w-6 h-6"></i>
+        </div>
+        <div class="space-y-1"><span class="text-xs font-bold text-brand-teal uppercase tracking-wider block">2009 - 2014</span>
+         <h4 data-template-id="edu-h2" class="canva-text text-lg font-extrabold text-white"></h4>
+         <p data-template-id="edu-sub2" class="canva-text text-sm text-gray-400"></p>
+         <div class="inline-flex items-center space-x-1.5 bg-brand-blue/15 text-brand-blue text-[11px] font-bold px-2 py-0.5 rounded border border-brand-blue/25 mt-2"><i data-lucide="award" class="w-3.5 h-3.5"></i> <span data-template-id="edu-award-badge"></span>
+         </div>
+        </div>
+       </div><!-- Education item 3 -->
+       <div data-template-id="edu-card-3" class="canva-card bg-brand-card/40 border border-gray-800/80 rounded-2xl p-6 hover:border-brand-teal/30 transition-all duration-300 flex items-start space-x-4">
+        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 border border-brand-teal/20 flex-shrink-0 flex items-center justify-center text-brand-teal"><i data-lucide="pencil" class="w-6 h-6"></i>
+        </div>
+        <div class="space-y-1"><span class="text-xs font-bold text-brand-teal uppercase tracking-wider block">April 2012 - May 2012</span>
+         <h4 data-template-id="edu-h3" class="canva-text text-lg font-extrabold text-white"></h4>
+         <p data-template-id="edu-sub3" class="canva-text text-sm text-gray-400"></p>
+        </div>
+       </div>
+      </div><!-- Right: Awards & Affiliations -->
+      <div class="lg:col-span-5 space-y-6"><!-- Awards Block -->
+       <div data-template-id="awards-panel" class="canva-panel bg-brand-card/40 border border-gray-800/80 rounded-2xl p-6 space-y-4">
+        <div class="flex items-center space-x-2 text-yellow-400 mb-2"><i data-lucide="trophy" class="w-5 h-5"></i> <span data-template-id="awards-title" class="canva-text text-xs uppercase tracking-widest font-extrabold text-gray-400"></span>
+        </div>
+        <ul class="space-y-3">
+         <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-teal mt-0.5 flex-shrink-0"></i> <span data-template-id="award-item1" class="canva-text text-sm text-gray-300"></span></li>
+         <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-teal mt-0.5 flex-shrink-0"></i> <span data-template-id="award-item2" class="canva-text text-sm text-gray-300"></span></li>
+         <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-teal mt-0.5 flex-shrink-0"></i> <span data-template-id="award-item3" class="canva-text text-sm text-gray-300"></span></li>
+        </ul>
+       </div><!-- Affiliations Block -->
+       <div data-template-id="affil-panel" class="canva-panel bg-brand-card/40 border border-gray-800/80 rounded-2xl p-6 space-y-4">
+        <div class="flex items-center space-x-2 text-brand-blue mb-2"><i data-lucide="users" class="w-5 h-5"></i> <span data-template-id="affil-title" class="canva-text text-xs uppercase tracking-widest font-extrabold text-gray-400"></span>
+        </div>
+        <ul class="space-y-3">
+         <li class="flex items-start space-x-2"><i data-lucide="plus-circle" class="w-4 h-4 text-brand-blue mt-0.5 flex-shrink-0"></i> <span data-template-id="affil-item1" class="canva-text text-sm text-gray-300"></span></li>
+         <li class="flex items-start space-x-2"><i data-lucide="plus-circle" class="w-4 h-4 text-brand-blue mt-0.5 flex-shrink-0"></i> <span data-template-id="affil-item2" class="canva-text text-sm text-gray-300"></span></li>
+         <li class="flex items-start space-x-2"><i data-lucide="plus-circle" class="w-4 h-4 text-brand-blue mt-0.5 flex-shrink-0"></i> <span data-template-id="affil-item3" class="canva-text text-sm text-gray-300"></span></li>
+         <li class="flex items-start space-x-2"><i data-lucide="plus-circle" class="w-4 h-4 text-brand-blue mt-0.5 flex-shrink-0"></i> <span data-template-id="affil-item4" class="canva-text text-sm text-gray-300"></span></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- CONTACT & ENGAGEMENT SECTION -->
+   <section id="contact" class="canva-section py-20 bg-brand-dark border-t border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch"><!-- Left: Contact Details / Direct Hooks -->
+      <div class="lg:col-span-5 flex flex-col justify-between space-y-8">
+       <div><span data-template-id="contact-tag" class="canva-text text-xs uppercase font-extrabold tracking-widest text-brand-teal"></span>
+        <h3 data-template-id="contact-title" class="canva-text text-3xl font-extrabold text-white mt-1"></h3>
+        <p data-template-id="contact-desc" class="canva-text text-gray-400 mt-4 leading-relaxed"></p>
+       </div><!-- Contact Channels -->
+       <div class="space-y-4"><!-- Mobile Clipboard Card -->
+        <div class="bg-brand-card/40 border border-gray-800 p-4 rounded-xl flex items-center justify-between">
+         <div class="flex items-center space-x-3.5">
+          <div class="w-10 h-10 rounded-lg bg-brand-teal/10 flex items-center justify-center text-brand-teal"><i data-lucide="phone" class="w-5 h-5"></i>
+          </div>
+          <div><span class="text-[10px] uppercase font-bold text-gray-400 block tracking-wider">Mobile Number</span> <span class="text-sm font-bold text-white">+639052437480</span>
+          </div>
+         </div><button type="button" onclick="copyContact('+639052437480', 'phone')" id="copy-phone" class="p-2 hover:bg-white/5 rounded-lg text-gray-400 hover:text-white transition-colors"> <i data-lucide="copy" class="w-4 h-4"></i> </button>
+        </div><!-- Email Clipboard Card -->
+        <div class="bg-brand-card/40 border border-gray-800 p-4 rounded-xl flex items-center justify-between">
+         <div class="flex items-center space-x-3.5">
+          <div class="w-10 h-10 rounded-lg bg-brand-blue/10 flex items-center justify-center text-brand-blue"><i data-lucide="mail" class="w-5 h-5"></i>
+          </div>
+          <div><span class="text-[10px] uppercase font-bold text-gray-400 block tracking-wider">Email Address</span> <span class="text-sm font-bold text-white">manimtimarjay@gmail.com</span>
+          </div>
+         </div><button type="button" onclick="copyContact('manimtimarjay@gmail.com', 'email')" id="copy-email" class="p-2 hover:bg-white/5 rounded-lg text-gray-400 hover:text-white transition-colors"> <i data-lucide="copy" class="w-4 h-4"></i> </button>
+        </div><!-- Address Card -->
+        <div class="bg-brand-card/40 border border-gray-800 p-4 rounded-xl flex items-center space-x-3.5">
+         <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400"><i data-lucide="map-pin" class="w-5 h-5"></i>
+         </div>
+         <div><span class="text-[10px] uppercase font-bold text-gray-400 block tracking-wider">Location Base</span> <span class="text-sm font-bold text-white">Santa Ana, Manila, Philippines</span>
+         </div>
+        </div>
+       </div><!-- Mini indicator/disclosure -->
+       <div class="text-xs text-gray-500 italic">
+        *Available for immediate remote project consultancies or full-time opportunities.
+       </div>
+      </div><!-- Right: Quick Connect Form -->
+      <div class="lg:col-span-7 bg-brand-card/40 border border-gray-800 rounded-3xl p-6 sm:p-8 relative"><!-- Success Overlay (hidden by default) -->
+       <div id="contact-success-overlay" class="absolute inset-0 bg-brand-card rounded-3xl flex flex-col items-center justify-center p-6 text-center z-10 hidden transition-all duration-300">
+        <div class="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4 animate-bounce"><i data-lucide="check-circle" class="w-8 h-8"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white">Message Dispatched!</h4>
+        <p class="text-sm text-gray-400 max-w-sm mt-2">Thank you for reaching out. Arjay will get in touch with you at the earliest opportunity.</p><button type="button" onclick="resetContactForm()" class="mt-6 px-5 py-2.5 bg-brand-teal hover:bg-brand-teal/95 text-white font-bold rounded-xl transition-all duration-300 text-xs">Send Another Message</button>
+       </div>
+       <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-5">
+        <div><label for="contact-name" data-template-id="form-lbl-name" class="canva-text text-xs uppercase font-extrabold tracking-wider text-gray-400 block mb-2"></label> <input type="text" id="contact-name" required placeholder="Jane Doe" class="w-full bg-brand-dark border border-gray-800 hover:border-gray-700 focus:border-brand-teal focus:ring-1 focus:ring-brand-teal outline-none rounded-xl px-4 py-3 text-sm text-white transition-all duration-300">
+        </div>
+        <div><label for="contact-email" data-template-id="form-lbl-email" class="canva-text text-xs uppercase font-extrabold tracking-wider text-gray-400 block mb-2"></label> <input type="email" id="contact-email" required placeholder="jane@company.com" class="w-full bg-brand-dark border border-gray-800 hover:border-gray-700 focus:border-brand-teal focus:ring-1 focus:ring-brand-teal outline-none rounded-xl px-4 py-3 text-sm text-white transition-all duration-300">
+        </div>
+        <div><label for="contact-msg" data-template-id="form-lbl-msg" class="canva-text text-xs uppercase font-extrabold tracking-wider text-gray-400 block mb-2"></label> <textarea id="contact-msg" rows="4" required placeholder="Let's build, optimize, or scale your business process automation goals..." class="w-full bg-brand-dark border border-gray-800 hover:border-gray-700 focus:border-brand-teal focus:ring-1 focus:ring-brand-teal outline-none rounded-xl p-4 text-sm text-white transition-all duration-300 resize-none"></textarea>
+        </div><button type="submit" data-template-id="form-submit" class="canva-button w-full px-6 py-4 font-bold text-white rounded-xl shadow-lg hover:shadow-brand-teal/10 transition-all duration-300 flex items-center justify-center gap-2"> <i data-lucide="send" class="w-4 h-4"></i> </button>
+       </form>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main><!-- FOOTER -->
+  <footer data-template-id="footer" class="canva-footer bg-brand-dark border-t border-gray-900 py-8">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <p data-template-id="footer-copy" class="canva-text text-xs text-gray-500"></p>
+    <div class="flex items-center space-x-6"><a href="#about" class="text-xs text-gray-400 hover:text-brand-teal transition-colors">Overview</a> <a href="#experience" class="text-xs text-gray-400 hover:text-brand-teal transition-colors">Portfolios</a> <a href="#calculator" class="text-xs text-gray-400 hover:text-brand-teal transition-colors">Simulator</a>
+    </div>
+   </div>
+  </footer><!-- SDK & JavaScript Logics -->
+  <script src="/_sdk/editing_sdk.js"></script>
+  <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initiate Lucide Icons
+            lucide.createIcons();
+            
+            // Run default calculation
+            updateCalculation();
+        });
+
+        // Tab switcher function between Quess and Evoke portfolios
+        function switchExperienceTab(activeTab) {
+            const tabQuess = document.getElementById('tab-quess');
+            const tabEvoke = document.getElementById('tab-evoke');
+            const tabQuessBtn = document.getElementById('tab-quess-btn');
+            const tabEvokeBtn = document.getElementById('tab-evoke-btn');
+
+            if (activeTab === 'quess') {
+                tabQuess.classList.remove('hidden');
+                tabEvoke.classList.add('hidden');
+
+                // Adjust active states
+                tabQuessBtn.className = "px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center gap-2 bg-brand-teal text-white shadow-lg shadow-brand-teal/20";
+                tabEvokeBtn.className = "px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center gap-2 border border-gray-800 text-gray-400 hover:text-white";
+            } else {
+                tabQuess.classList.add('hidden');
+                tabEvoke.classList.remove('hidden');
+
+                // Adjust active states
+                tabQuessBtn.className = "px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center gap-2 border border-gray-800 text-gray-400 hover:text-white";
+                tabEvokeBtn.className = "px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center gap-2 bg-brand-teal text-white shadow-lg shadow-brand-teal/20";
+            }
+        }
+
+        // Live savings calculation simulator
+        function updateCalculation() {
+            const manualMins = parseFloat(document.getElementById('manual-time').value);
+            const volume = parseFloat(document.getElementById('monthly-volume').value);
+            const hourlyRate = parseFloat(document.getElementById('hourly-rate').value);
+
+            // Update UI label text dynamically
+            document.getElementById('manual-time-val').textContent = manualMins + ' mins';
+            document.getElementById('monthly-volume-val').textContent = volume.toLocaleString();
+            document.getElementById('hourly-rate-val').textContent = '$' + hourlyRate + '/hr';
+
+            // Calculations
+            // Total monthly manual hours: (mins * volume) / 60
+            const monthlyManualHours = (manualMins * volume) / 60;
+            // Let's assume automation eliminates 90% of manual effort
+            const savedHoursVal = Math.round(monthlyManualHours * 0.90);
+            
+            // FTE Calculation (Assuming 160 business working hours in a month is 1 full-time employee)
+            const fteSavedVal = (savedHoursVal / 160).toFixed(1);
+
+            // Cost Avoidance/Savings
+            const costSavedVal = Math.round(savedHoursVal * hourlyRate);
+            const annualCostSavedVal = Math.round(costSavedVal * 12);
+
+            // Inject metrics
+            document.getElementById('saved-hours').textContent = savedHoursVal.toLocaleString() + ' hrs';
+            document.getElementById('fte-saved').textContent = fteSavedVal + ' FTEs';
+            document.getElementById('cost-avoided').textContent = '$' + costSavedVal.toLocaleString();
+            document.getElementById('annual-saving-val').textContent = '$' + annualCostSavedVal.toLocaleString();
+        }
+
+        // Preset loader for quick simulations
+        function loadCalcPreset(mins, vol, rate, title) {
+            document.getElementById('manual-time').value = mins;
+            document.getElementById('monthly-volume').value = vol;
+            document.getElementById('hourly-rate').value = rate;
+            document.getElementById('calc-project-title').textContent = title + ' Simulation';
+
+            // Re-run calculations
+            updateCalculation();
+        }
+
+        // Skill group visual filtering
+        function filterSkills(category) {
+            const cards = document.querySelectorAll('.skill-category-card');
+            
+            // Reset filters background active styling
+            const filterBtns = ['all', 'rpa', 'pm', 'data'];
+            filterBtns.forEach(btn => {
+                const btnEl = document.getElementById('filter-' + btn);
+                if (btn === category) {
+                    btnEl.className = "px-4 py-2 text-xs font-bold rounded-full bg-brand-teal text-white shadow-md shadow-brand-teal/10 transition-all duration-300";
+                } else {
+                    btnEl.className = "px-4 py-2 text-xs font-bold rounded-full border border-gray-800 text-gray-400 hover:text-white transition-all duration-300";
+                }
+            });
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.classList.remove('opacity-30', 'scale-95');
+                } else {
+                    if (card.id === 'skill-group-' + category) {
+                        card.classList.remove('opacity-30', 'scale-95');
+                    } else {
+                        card.classList.add('opacity-30', 'scale-95');
+                    }
+                }
+            });
+        }
+
+        // Direct Copy-to-Clipboard logic
+        function copyContact(text, type) {
+            navigator.clipboard.writeText(text).then(() => {
+                const buttonId = type === 'phone' ? 'copy-phone' : 'copy-email';
+                const button = document.getElementById(buttonId);
+                const originalIcon = button.innerHTML;
+                
+                // Show visual success state
+                button.innerHTML = '<i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>';
+                lucide.createIcons();
+                
+                setTimeout(() => {
+                    button.innerHTML = originalIcon;
+                    lucide.createIcons();
+                }, 2000);
+            });
+        }
+
+        // Contact Form Handlers
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            
+            // Simulates smooth async dispatching
+            const overlay = document.getElementById('contact-success-overlay');
+            overlay.classList.remove('hidden');
+            overlay.classList.add('flex');
+        }
+
+        function resetContactForm() {
+            const overlay = document.getElementById('contact-success-overlay');
+            overlay.classList.add('hidden');
+            overlay.classList.remove('flex');
+            
+            // Clear fields
+            document.getElementById('contact-form').reset();
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0238e5e1bc58552',t:'MTc3OTg2OTU2Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
